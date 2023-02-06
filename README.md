@@ -1,2 +1,1 @@
-# newrt
-this was justa ne
+# This Is A Repo Containing Few Programs Written In Pascal Learning.
