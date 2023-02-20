@@ -14,12 +14,26 @@
 - using constants
 
 
-## 3 : Using Operators
-> Operators in pascal are
+## 3 : Using Operators and Control Structures
+Operators in pascal are
 >- Arithmetic 
 >- Relational 
 >- Boolean 
+  
+Basic Control structures are also included 
+
+- if ~ then
+- if ~ then ~ else
+- nested ~ if
+- if ~ then ~ elseif ~ else
+
 
  *the files include several examples which come in handy*
 
-
+## 4 : Loops
+Include 
+> for ..... do
+>while.... do
+>repeat ....until
+ 
+ Also the files contain  <u> loop control statement </u>   such as **Break** and **Continue**
