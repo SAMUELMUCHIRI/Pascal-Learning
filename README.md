@@ -37,3 +37,11 @@ Include
 >repeat ....until
  
  Also the files contain  <u> loop control statement </u>   such as **Break** and **Continue**
+
+ ## 5 : Sub-Programs
+These are modules that perform a task when called by main program  
+
+They are Divided into
+
+>1. Functions : Return a single value
+>2.  Procedures : Dont Display a value 
