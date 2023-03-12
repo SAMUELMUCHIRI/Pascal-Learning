@@ -14,4 +14,93 @@ State 5 advantages of topdown modular  structured programming , discuss each in 
 
 ##  Question 2
 
-Write a pseudocode to get two numbers from the user a dividend 
+Write a pseudocode to get two numbers from the user a dividend  and divisor ,testing to ensure divisor is not zero and displaying quotient
+
+**Solution**
+
+    1:Begin
+    2:Input Divisor
+    3:input Dividend
+    4:If divisor is not equal to zero 
+        4.1 :quotient equals to the   result of dividend  divided by divisor
+        4.2: Printout the quotient
+    5:Otherwise
+        5.1 : No action on the dividend and divisor
+
+## Question 3
+Write a program that enumarate smonths of the year .The program uses a user defined type ofstring ti ask a user to enter their first name and second name.It also asks user to enter year of birth and calculate their age .If the user was orn in May it will display customized message as shown below 
+>Happy Birthday Mrs James Omondi for turning 23 years old.
+ 
+**Solution**
+
+
+```Pascal
+program Year;
+uses crt;
+Type
+year=Integer;
+Type
+names=String;
+(*Names is defined as a type String for all alphabetical inputs*)
+const 
+current_year=2023;
+var
+fname,Sname, Reference, month:names;
+var 
+Yearofbirth,age:year;
+begin
+WriteLn('Mr or Mrs') ; 
+ReadLn(Reference);
+WriteLn('First Name') ; 
+ReadLn(fname);
+WriteLn('Second Name') ; 
+ReadLn(Sname);
+WriteLn('Month You were Born') ; 
+ReadLn(month);
+WriteLn('Year you were born') ; 
+ReadLn(Yearofbirth);
+age:=current_year-Yearofbirth;
+if month='May' then
+WriteLn('Happy birthday  ',Reference, ' ',fname,' ',Sname,' for turning  ',age,'years old.')
+else 
+WriteLn('your age is  ',age);
+  readln;
+end.
+```
+
+## Question 4
+
+Implement the above output using a repeat until loop for the series which was initially meant to reach 18. 
+        *(10 Marks)*
+
+**Solution**
+
+```Pascal
+program project4;
+uses crt;
+var
+num , product:Integer;
+begin
+num:=3;
+product:=1;
+repeat 
+begin 
+WriteLn('number is ' ,num);
+
+product:=product*num;
+num:=num+3;
+if (num=12) then
+  begin
+   num:=num+3; 
+   continue
+  end
+    else if(num>15) then
+      break;
+end;
+until (num=18);
+WriteLn('product of the series ', product);
+  
+  readln;
+end.
+
+```
