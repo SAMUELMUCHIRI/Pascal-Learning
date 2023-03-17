@@ -13,13 +13,13 @@ begin
 num:=12;
 repeat 
 begin 
+num:=num+2;
 square:=num*num;
 WriteLn('the square of  ',num,' is ',square);
-num:=num+2;
+
 end;
 until num=30;
-square:=num*num;
-WriteLn('the square of  ',num,' is ',square);
+
   readln;
 end.
 
