@@ -3,6 +3,27 @@
 12 and 30. Use Repeat… Until loop.
 </p>
 
+**solution**
+```Pascal
+program Question1;
+uses crt;
+var 
+num, square:Integer;
+begin
+num:=12;
+repeat 
+begin 
+square:=num*num;
+WriteLn('the square of  ',num,' is ',square);
+num:=num+2;
+end;
+until num=30;
+square:=num*num;
+WriteLn('the square of  ',num,' is ',square);
+  readln;
+end.
+
+```
 <p>
 2.  The interest accrued I for a principal interest amount P after period of time T at the rate R 
 is given by the formula
@@ -17,3 +38,25 @@ is given by the formula
  The procedure calculates the interest at a rate of 12% per annum for a period of 
   5 years. The procedure then returns the interest to the main program for output.
 </p>
+
+```Pascal
+program Question2;
+uses crt;
+var
+principal ,interest:Real;
+const 
+time=5;
+rate=0.12;
+procedure compute(n:Real);
+begin 
+interest:=principal*rate*time;
+writeln('the interest is ', interest);
+end;
+
+begin
+  WriteLn('enter principal');
+  ReadLn(principal);
+  compute(principal);
+  readKey();
+end.
+```
