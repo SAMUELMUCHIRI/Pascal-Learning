@@ -1,6 +1,6 @@
 <p>
 1. Write a Pascal program that could be used to generate squares of even integers between 
-12 and 30. Use Repeat… Until loop.
+12 and 30.   Use Repeat… Until loop.
 </p>
 
 **solution**
