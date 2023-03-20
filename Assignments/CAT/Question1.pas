@@ -1,17 +1,18 @@
 program Question1;
 uses crt;
-var 
-num, square:Integer;
+var
+A , B ,Y:Real;
+function hypotenuse():Real;
+var result:Real;
 begin
-num:=12;
-repeat 
-begin 
-num:=num+2;
-square:=num*num;
-WriteLn('the square of  ',num,' is ',square);
-
+WriteLn('input value of A');
+ReadLn(A);
+WriteLn('input value of B');
+ReadLn(B);
+result:=Sqrt(Sqr(A)+Sqr(B));
+WriteLn('The value of Y is ', result);
 end;
-until num=30;
-
+begin
+hypotenuse();
   readln;
 end.

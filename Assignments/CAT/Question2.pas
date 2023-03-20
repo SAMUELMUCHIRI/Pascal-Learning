@@ -1,19 +1,30 @@
 program Question2;
 uses crt;
-var
-principal ,interest:Real;
-const 
-time=5;
-rate=0.12;
-procedure compute(n:Real);
-begin 
-interest:=principal*rate*time;
-writeln('the interest is ', interest);
-end;
+var 
+Maths , English, Physics, Chemistry, Kiswahili, Average:Real;
 
 begin
-  WriteLn('enter principal');
-  ReadLn(principal);
-  compute(principal);
-  readKey();
+WriteLn('Enter marks for Maths');
+ReadLn(Maths);
+WriteLn('Enter marks for English');
+ReadLn(English);
+WriteLn('Enter marks for Physics');
+ReadLn(Physics);
+WriteLn('Enter marks for Chemistry');
+ReadLn(Chemistry);
+WriteLn('Enter marks for Kiswahili');
+ReadLn(Kiswahili);
+Average:=(Maths+English+Physics+Chemistry+Kiswahili)/5;
+if (Average >=80) then
+WriteLn('the average is ', Average ,' and the Grade is  A')
+else if (Average >=70) then
+WriteLn('the average is ', Average ,' and the Grade is  B')
+else if (Average >=60) then
+WriteLn('the average is ', Average ,' and the Grade is  C')
+else if (Average >=50) then
+WriteLn('the average is ', Average ,' and the Grade is  D')
+else
+WriteLn('the average is ', Average ,' and the Grade is  E');
+
+  readln;
 end.
