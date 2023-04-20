@@ -104,3 +104,34 @@ WriteLn('product of the series ', product);
 end.
 
 ```
+
+  Question 4 Marked answer
+```Pascal  
+
+program projectq;
+uses crt;
+Var
+Num, product:Integer;
+begin
+  Product :=1;
+  Num:=3;
+  repeat 
+  Begin
+  
+  If (num=12) then 
+  Begin
+  Num:=num+3;
+  Continue;
+  End;
+  Product:=product*num;
+  WriteLn ('    Number = ', num);
+  Num:=num+3;
+  If (num>15) then
+  Break;
+  End;
+  Until (num=18) ;
+  WriteLn ('    Product of the series is = ', product) ;
+  
+  readln;
+end.
+```
