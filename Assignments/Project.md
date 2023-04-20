@@ -1,4 +1,4 @@
-## Question 1
+# Question 1
 State 5 advantages of topdown modular  structured programming , discuss each in your own words
 
 **Solution**
@@ -129,5 +129,4 @@ begin
   readln;
 end.
 ```
-=======
->>>>>>> b334bb1413bcc43dbee5548b8576515b8e758057
+
