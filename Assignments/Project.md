@@ -35,37 +35,30 @@ Write a program that enumarate smonths of the year .The program uses a user defi
 
 
 ```Pascal
-program Year;
+program enum1;
 uses crt;
-Type
-year=Integer;
-Type
-names=String;
-(*Names is defined as a type String for all alphabetical inputs*)
-const 
-current_year=2023;
-var
-fname,Sname, Reference, month:names;
+type
+months=(January, February,March, May, June, July ,August, September, November, December);
+name=String;
 var 
-Yearofbirth,age:year;
+firstname, surname:name;
+age,yearofbirth:Integer;
+month: months;
 begin
-WriteLn('Mr or Mrs') ; 
-ReadLn(Reference);
-WriteLn('First Name') ; 
-ReadLn(fname);
-WriteLn('Second Name') ; 
-ReadLn(Sname);
-WriteLn('Month You were Born') ; 
-ReadLn(month);
-WriteLn('Year you were born') ; 
-ReadLn(Yearofbirth);
-age:=current_year-Yearofbirth;
-if month='May' then
-WriteLn('Happy birthday  ',Reference, ' ',fname,' ',Sname,' for turning  ',age,'years old.')
-else 
-WriteLn('your age is  ',age);
+month:=May;
+ WriteLn('Enter First Name');
+ ReadLn(firstname);
+ WriteLn('Enter Second Name');
+ ReadLn(surname);
+ WriteLn('Enter year of Birth');
+ ReadLn(yearofbirth);
+ age:=2023-year;
+  
+ if month=May then
+ WriteLn('Happy birthday Mr. ', firstname, '  ',surname,'  you are turning  ',age,'  years old');
   readln;
 end.
+
 ```
 
 ## Question 4
@@ -104,6 +97,7 @@ WriteLn('product of the series ', product);
 end.
 
 ```
+<<<<<<< HEAD
 
   Question 4 Marked answer
 ```Pascal  
@@ -135,3 +129,5 @@ begin
   readln;
 end.
 ```
+=======
+>>>>>>> b334bb1413bcc43dbee5548b8576515b8e758057
